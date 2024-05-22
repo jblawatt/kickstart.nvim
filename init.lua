@@ -890,6 +890,7 @@ require('lazy').setup({
 
   require 'custom.plugins.simple',
   require 'custom.plugins.nlsp-settings',
+  require 'custom.plugins.dadbob',
   -- require 'custom.plugins.neorg',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
