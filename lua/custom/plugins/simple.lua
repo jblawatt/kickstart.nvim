@@ -1,4 +1,5 @@
 return {
+  { 'kdheepak/lazygit.nvim' },
   { 'tpope/vim-fugitive' },
   { 'vim-test/vim-test' },
   {
@@ -70,4 +71,16 @@ return {
       require('symbols-outline').setup()
     end,
   },
+  {
+    'nvim-neotest/neotest',
+    dependencies = {
+      'nvim-neotest/neotest-python',
+      'nvim-lua/plenary.nvim',
+      'nvim-treesitter/nvim-treesitter',
+      'antoinemadec/FixCursorHold.nvim',
+      'nvim-neotest/nvim-nio',
+    },
+  },
+  { 'xiyaowong/transparent.nvim' },
+  { 'NvChad/nvim-colorizer.lua' },
 }
