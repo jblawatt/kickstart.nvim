@@ -83,4 +83,48 @@ return {
   },
   { 'xiyaowong/transparent.nvim' },
   { 'NvChad/nvim-colorizer.lua' },
+  {
+    'tetzng/random-colorscheme.nvim',
+    lazy = false,
+    opts = {
+      -- colorschemes = {}, -- default: all available colors
+      set_on_load = false, -- default: true
+    },
+    keys = {
+      {
+        '<leader>cc',
+        function()
+          require('random-colorscheme').set()
+        end,
+        desc = 'Set Random Colorscheme',
+      },
+    },
+  },
+  {
+    'iamcco/markdown-preview.nvim',
+    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+    ft = { 'markdown' },
+    build = function()
+      vim.fn['mkdp#util#install']()
+    end,
+  },
+  {
+    'nvim-orgmode/orgmode',
+    event = 'VeryLazy',
+    ft = { 'org' },
+    config = function()
+      -- Setup orgmode
+      require('orgmode').setup {
+        org_agenda_files = '~/orgfiles/**/*',
+        org_default_notes_file = '~/orgfiles/refile.org',
+      }
+
+      -- NOTE: If you are using nvim-treesitter with ~ensure_installed = "all"~ option
+      -- add ~org~ to ignore_install
+      -- require('nvim-treesitter.configs').setup({
+      --   ensure_installed = 'all',
+      --   ignore_install = { 'org' },
+      -- })
+    end,
+  },
 }

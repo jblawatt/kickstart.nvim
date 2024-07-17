@@ -88,7 +88,6 @@ return {
     dependencies = { 'rktjmp/lush.nvim' },
   },
   { url = 'https://gitlab.com/madyanov/gruber.vim', name = 'madyanov-gruber-vim' },
-
   { 'ribru17/bamboo.nvim' },
   { 'rebelot/kanagawa.nvim' },
   { 'navarasu/onedark.nvim' },
@@ -117,4 +116,9 @@ return {
     priority = 1000,
   },
   { 'yonlu/omni.vim' },
+  {
+    'uloco/bluloco.nvim',
+    requires = { 'rktjmp/lush.nvim' },
+  },
+  { 'bignimbus/pop-punk.vim' },
 }

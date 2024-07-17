@@ -894,7 +894,7 @@ require('lazy').setup({
   require 'custom.plugins.nlsp-settings',
   require 'custom.plugins.dadbob',
   require 'custom.plugins.colorschemes',
-  -- require 'custom.plugins.neorg',
+  require 'custom.plugins.neorg',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -951,3 +951,9 @@ require('neotest').setup {
 require('neodev').setup {
   library = { plugins = { 'neotest' }, types = true },
 }
+
+-- vim.cmd.colorscheme 'kanagawa-dragon'
+vim.cmd.colorscheme 'pop-punk'
+vim.opt.foldmethod = 'expr' -- use treesitter for folding
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.foldlevel = 99
