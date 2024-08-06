@@ -952,7 +952,10 @@ require('neodev').setup {
 }
 
 -- vim.cmd.colorscheme 'kanagawa-dragon'
-vim.cmd.colorscheme 'pop-punk'
+-- vim.cmd.colorscheme 'rose-pine'
+-- vim.cmd.colorscheme 'pop-punk'
+-- vim.cmd.colorscheme 'darkvoid'
+vim.cmd.colorscheme 'plain'
 vim.opt.foldmethod = 'expr' -- use treesitter for folding
 vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.opt.foldlevel = 99

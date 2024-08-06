@@ -121,4 +121,8 @@ return {
     requires = { 'rktjmp/lush.nvim' },
   },
   { 'bignimbus/pop-punk.vim' },
+  { 'aliqyan-21/darkvoid.nvim' },
+  { 'horanmustaplot/xnvim' },
+  { 'ntk148v/komau.vim' },
+  { 'andreypopp/vim-colors-plain' },
 }
